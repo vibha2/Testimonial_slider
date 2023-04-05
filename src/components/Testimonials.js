@@ -40,11 +40,12 @@ const Testimonials = (props) => {
     }
 
   return (
-    <div>
+    <div className='w-[85vw] md:w-[700px] bg-white flex flex-col justify-center items-center
+    mt-10 p-10 transition-all duration-700 hover:shadow-xl rounded-md'>
         
         <Card review={reviews[index]}  />
 
-        <div className='flex text-3xl mt-5 text-violet-400 font-bold justify-center items-center'>
+        <div className='flex text-3xl mt-9 text-violet-400 font-bold justify-center items-center'>
             <button
              onClick={ leftShiftHandler }
              className='cursor-pointer hover:text-violet-500'
@@ -59,7 +60,7 @@ const Testimonials = (props) => {
             </button>
         </div>
 
-        <div className='mt-1'>
+        <div className='mt-6'>
             <button 
             onClick={ surpriseHandler }
              className='bg-violet-400 hover:bg-violet-500 transition-all duration-200 cursor-pointer px-10 py-2
